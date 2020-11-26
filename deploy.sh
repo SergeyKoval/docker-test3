@@ -11,6 +11,6 @@ docker push deplake/multi-server:$SHA
 docker push deplake/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployments server=deplake/multi-server:$SHA
-kubectl set image deployments/client-deployments client=deplake/multi-client:$SHA
-kubectl set image deployments/worker-deployments worker=deplake/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=deplake/multi-server:$SHA
+kubectl set image deployments/client-deployment client=deplake/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=deplake/multi-worker:$SHA

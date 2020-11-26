@@ -1,0 +1,5 @@
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install my-release ingress-nginx/ingress-nginx
+
+
+ gcloud container clusters upgrade  YOUR_CLUSTER_NAME --master --cluster-version 1.16
